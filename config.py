@@ -10,16 +10,16 @@ load_dotenv("config.env")
 
 BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
 
-API_ID = int(os.environ.get("API_ID", "2040"))
-API_HASH = os.environ.get("API_HASH", "b18441a1ff607e10a989891a5462e627")
+API_ID = int(os.environ.get("API_ID", "22643938"))
+API_HASH = os.environ.get("API_HASH", "e91a7190a1032a40840cd45d705f2778")
 
-CHANNEL_DB = int(os.environ.get("CHANNEL_DB", ""))
-MONGO_URL = os.environ.get("MONGO_URL", "")
+CHANNEL_DB = int(os.environ.get("CHANNEL_DB", "-1002138740749"))
+MONGO_URL = os.environ.get("MONGO_URL", "mongodb+srv://kontol:memek@cluster0.rje9nax.mongodb.net/?retryWrites=true&w=majority")
 
 RESTRICT = strtobool(os.environ.get("RESTRICT", "True"))
 
-FORCE_SUB_1 = int(os.environ.get("FORCE_SUB_1", "0"))
-FORCE_SUB_2 = int(os.environ.get("FORCE_SUB_2", "0"))
+FORCE_SUB_1 = int(os.environ.get("FORCE_SUB_1", "-1002112481862"))
+FORCE_SUB_2 = int(os.environ.get("FORCE_SUB_2", "-1001976987839"))
 FORCE_SUB_3 = int(os.environ.get("FORCE_SUB_3", "0"))
 FORCE_SUB_4 = int(os.environ.get("FORCE_SUB_4", "0"))
 
@@ -41,7 +41,7 @@ FORCE_MESSAGE = os.environ.get(
 )
 
 try:
-    ADMINS = [int(x) for x in (os.environ.get("ADMINS", "").split())]
+    ADMINS = [int(x) for x in (os.environ.get("ADMINS", "5070693733 1346172877 5805599677 5178772086").split())]
 except ValueError:
     raise Exception("Daftar Admin Anda tidak berisi User ID Telegram yang valid.")
     
